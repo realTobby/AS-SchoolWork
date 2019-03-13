@@ -46,11 +46,11 @@ namespace CodingDojoRomanNumerals
 
         public int Convert(string roman)
         {
-            return CheckTestData(roman);
-            //return ConvertFromRomanToArabic(roman);
+            //return CheckTestData(roman);
+            return ConvertFromRomanToArabic(roman);
         }
 
-        public int GetRomanValue(string roman)
+        public static int GetRomanValue(string roman)
         {
             int resultValue = 0;
             switch(roman)
@@ -91,11 +91,8 @@ namespace CodingDojoRomanNumerals
 
             for (int stringIndex = 0; stringIndex < roman.Length; stringIndex++)
             {
-                //counter = counter + GetRomanValue(roman[stringIndex].ToString());
+                counter = counter + GetRomanValue(roman[stringIndex].ToString());
             }
-
-
-
 
             return counter;
         }

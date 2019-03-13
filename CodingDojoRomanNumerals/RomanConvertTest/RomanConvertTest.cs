@@ -65,53 +65,56 @@ namespace RomanConvertTest
             Assert.AreEqual(2013, romanConvert.Convert(roman));
         }
 
+
+
+
         [TestMethod]
         public void TestGetRomanValueI()
         {
             string roman = "I";
-            Assert.AreEqual(1, romanConvert.GetRomanValue(roman));
+            Assert.AreEqual(1, RomanConvert.GetRomanValue(roman));
         }
 
         [TestMethod]
         public void TestGetRomanValueV()
         {
             string roman = "V";
-            Assert.AreEqual(5, romanConvert.GetRomanValue(roman));
+            Assert.AreEqual(5, RomanConvert.GetRomanValue(roman));
         }
 
         [TestMethod]
         public void TestGetRomanValueX()
         {
             string roman = "X";
-            Assert.AreEqual(10, romanConvert.GetRomanValue(roman));
+            Assert.AreEqual(10, RomanConvert.GetRomanValue(roman));
         }
 
         [TestMethod]
         public void TestGetRomanValueL()
         {
             string roman = "L";
-            Assert.AreEqual(50, romanConvert.GetRomanValue(roman));
+            Assert.AreEqual(50, RomanConvert.GetRomanValue(roman));
         }
 
         [TestMethod]
         public void TestGetRomanValueC()
         {
             string roman = "C";
-            Assert.AreEqual(100, romanConvert.GetRomanValue(roman));
+            Assert.AreEqual(100, RomanConvert.GetRomanValue(roman));
         }
 
         [TestMethod]
         public void TestGetRomanValueD()
         {
             string roman = "D";
-            Assert.AreEqual(500, romanConvert.GetRomanValue(roman));
+            Assert.AreEqual(500, RomanConvert.GetRomanValue(roman));
         }
 
         [TestMethod]
         public void TestGetRomanValueM()
         {
             string roman = "M";
-            Assert.AreEqual(1000, romanConvert.GetRomanValue(roman));
+            Assert.AreEqual(1000, RomanConvert.GetRomanValue(roman));
         }
 
 
