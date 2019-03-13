@@ -1,0 +1,6 @@
+c:\users\user\documents\visual studio 2017\Projects\DirtyClean\DirtyClean\bin\Debug\DirtyClean.exe.config
+c:\users\user\documents\visual studio 2017\Projects\DirtyClean\DirtyClean\bin\Debug\DirtyClean.exe
+c:\users\user\documents\visual studio 2017\Projects\DirtyClean\DirtyClean\bin\Debug\DirtyClean.pdb
+c:\users\user\documents\visual studio 2017\Projects\DirtyClean\DirtyClean\obj\Debug\DirtyClean.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2017\Projects\DirtyClean\DirtyClean\obj\Debug\DirtyClean.exe
+c:\users\user\documents\visual studio 2017\Projects\DirtyClean\DirtyClean\obj\Debug\DirtyClean.pdb
