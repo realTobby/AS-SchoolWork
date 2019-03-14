@@ -2,6 +2,5 @@ C:\Users\user\Documents\GitHub\AS-SchoolWork\CodingDojoRomanNumerals\CodingDojoR
 C:\Users\user\Documents\GitHub\AS-SchoolWork\CodingDojoRomanNumerals\CodingDojoRomanNumerals\bin\Debug\CodingDojoRomanNumerals.exe
 C:\Users\user\Documents\GitHub\AS-SchoolWork\CodingDojoRomanNumerals\CodingDojoRomanNumerals\bin\Debug\CodingDojoRomanNumerals.pdb
 C:\Users\user\Documents\GitHub\AS-SchoolWork\CodingDojoRomanNumerals\CodingDojoRomanNumerals\obj\Debug\CodingDojoRomanNumerals.csprojResolveAssemblyReference.cache
-C:\Users\user\Documents\GitHub\AS-SchoolWork\CodingDojoRomanNumerals\CodingDojoRomanNumerals\obj\Debug\CodingDojoRomanNumerals.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\GitHub\AS-SchoolWork\CodingDojoRomanNumerals\CodingDojoRomanNumerals\obj\Debug\CodingDojoRomanNumerals.exe
 C:\Users\user\Documents\GitHub\AS-SchoolWork\CodingDojoRomanNumerals\CodingDojoRomanNumerals\obj\Debug\CodingDojoRomanNumerals.pdb

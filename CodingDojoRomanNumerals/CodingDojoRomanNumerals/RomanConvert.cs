@@ -50,48 +50,76 @@ namespace CodingDojoRomanNumerals
             return ConvertFromRomanToArabic(roman);
         }
 
-        public static int GetRomanValue(string roman)
+        public static int[] GetRomanValues(string roman)
         {
-            int resultValue = 0;
-            switch(roman)
+            int[] resultValue = new int[roman.Length + 1];
+
+            for(int romanIndex = 0; romanIndex < roman.Length; romanIndex++)
             {
-                default:
-                    resultValue = 0;
-                    break;
-                case "I":
-                    resultValue = 1;
-                    break;
-                case "V":
-                    resultValue = 5;
-                    break;
-                case "X":
-                    resultValue = 10;
-                    break;
-                case "L":
-                    resultValue = 50;
-                    break;
-                case "C":
-                    resultValue = 100;
-                    break;
-                case "D":
-                    resultValue = 500;
-                    break;
-                case "M":
-                    resultValue = 1000;
-                    break;
+                switch (roman[romanIndex])
+                {
+                    default:
+                        resultValue[romanIndex] = 0;
+                        break;
+                    case 'I':
+                        resultValue[romanIndex] = 1;
+                        break;
+                    case 'V':
+                        resultValue[romanIndex] = 5;
+                        break;
+                    case 'X':
+                        resultValue[romanIndex] = 10;
+                        break;
+                    case 'L':
+                        resultValue[romanIndex] = 50;
+                        break;
+                    case 'C':
+                        resultValue[romanIndex] = 100;
+                        break;
+                    case 'D':
+                        resultValue[romanIndex] = 500;
+                        break;
+                    case 'M':
+                        resultValue[romanIndex] = 1000;
+                        break;
+                }
             }
-
-
             return resultValue;
         }
 
         private static int ConvertFromRomanToArabic(string roman)
         {
+            int[] romanValues = GetRomanValues(roman);
+            return ConvertRomanValuesToDecimal(romanValues);
+        }
+
+        public static int ConvertRomanValuesToDecimal(int[] roman)
+        {
             int counter = 0;
 
-            for (int stringIndex = 0; stringIndex < roman.Length; stringIndex++)
+            for (int romanIndex = 0; romanIndex < roman.Length; romanIndex++)
             {
-                counter = counter + GetRomanValue(roman[stringIndex].ToString());
+                int currentRoman = roman[romanIndex];
+
+                if (romanIndex < roman.Length-1)
+                {
+                    int nextRoman = roman[romanIndex+1];
+
+                    if(currentRoman >= nextRoman)
+                    {
+                        counter += currentRoman;
+                    }
+                    else
+                    {
+                        counter += nextRoman - currentRoman;
+                        romanIndex++;
+                    }
+                }
+                else
+                {
+                    counter += currentRoman;
+                    romanIndex++;
+                }
             }
 
             return counter;

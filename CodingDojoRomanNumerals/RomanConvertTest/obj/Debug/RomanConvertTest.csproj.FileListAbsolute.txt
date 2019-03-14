@@ -14,6 +14,5 @@ C:\Users\user\Documents\GitHub\AS-SchoolWork\CodingDojoRomanNumerals\RomanConver
 C:\Users\user\Documents\GitHub\AS-SchoolWork\CodingDojoRomanNumerals\RomanConvertTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 C:\Users\user\Documents\GitHub\AS-SchoolWork\CodingDojoRomanNumerals\RomanConvertTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 C:\Users\user\Documents\GitHub\AS-SchoolWork\CodingDojoRomanNumerals\RomanConvertTest\obj\Debug\RomanConvertTest.csprojResolveAssemblyReference.cache
-C:\Users\user\Documents\GitHub\AS-SchoolWork\CodingDojoRomanNumerals\RomanConvertTest\obj\Debug\RomanConvertTest.csproj.CoreCompileInputs.cache
 C:\Users\user\Documents\GitHub\AS-SchoolWork\CodingDojoRomanNumerals\RomanConvertTest\obj\Debug\RomanConvertTest.dll
 C:\Users\user\Documents\GitHub\AS-SchoolWork\CodingDojoRomanNumerals\RomanConvertTest\obj\Debug\RomanConvertTest.pdb
