@@ -1,66 +1,58 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿// 42 Zeilen
+
+using System;
 
 namespace CodingDojoRomanNumerals
 {
     public class RomanConvert
     {
-        private static int CheckTestData(string roman)
+        public int Convert(string roman) // <- INTEGRATIONMETHODE EINSTIEG
         {
-            int resultDecimal = 0;
-            switch(roman)
-            {
-                default:
-                    resultDecimal = 0;
-                    break;
-                case "I":
-                    resultDecimal = 1;
-                    break;
-                case "II":
-                    resultDecimal = 2;
-                    break;
-                case "IV":
-                    resultDecimal = 4;
-                    break;
-                case "V":
-                    resultDecimal = 5;
-                    break;
-                case "IX":
-                    resultDecimal = 9;
-                    break;
-                case "XLII":
-                    resultDecimal = 42;
-                    break;
-                case "XCIX":
-                    resultDecimal = 99;
-                    break;
-                case "MMXIII":
-                    resultDecimal = 2013;
-                    break;
-            }
-            return resultDecimal;
-        }
-
-        public int Convert(string roman)
-        {
-            //return CheckTestData(roman);
             return ConvertFromRomanToArabic(roman);
         }
 
-        public static int[] GetRomanValues(string roman)
+        private static int ConvertFromRomanToArabic(string roman) // <- INTEGRATIONSMETHODE
+        {
+            int[] romanValues = GetRomanValues(roman);
+            int romanDecimal = ConvertRomanValuesToDecimal(romanValues);
+            return romanDecimal;
+        }
+
+        public static int ConvertRomanValuesToDecimal(int[] roman) // <- OPERATIONSMETHODE 11
+        {
+            int counter = 0;
+            for (int romanIndex = 0; romanIndex < roman.Length; romanIndex++)
+            {
+                int currentRoman = roman[romanIndex];
+                if (romanIndex < roman.Length - 1)
+                {
+                    int nextRoman = roman[romanIndex + 1];
+                    if (currentRoman >= nextRoman)
+                    {
+                        counter += currentRoman;
+                    }
+                    else
+                    {
+                        counter += nextRoman - currentRoman;
+                        romanIndex++;
+                    }
+                }
+                else
+                {
+                    counter += currentRoman;
+                    romanIndex++;
+                }
+            }
+            return counter;
+        }
+
+        public static int[] GetRomanValues(string roman) // <- OPERATIONSMETHODE 2 25
         {
             int[] resultValue = new int[roman.Length + 1];
-
-            for(int romanIndex = 0; romanIndex < roman.Length; romanIndex++)
+            for (int romanIndex = 0; romanIndex < roman.Length; romanIndex++)
             {
                 switch (roman[romanIndex])
                 {
-                    default:
-                        resultValue[romanIndex] = 0;
-                        break;
                     case 'I':
                         resultValue[romanIndex] = 1;
                         break;
@@ -86,45 +78,5 @@ namespace CodingDojoRomanNumerals
             }
             return resultValue;
         }
-
-        private static int ConvertFromRomanToArabic(string roman)
-        {
-            int[] romanValues = GetRomanValues(roman);
-            return ConvertRomanValuesToDecimal(romanValues);
-        }
-
-        public static int ConvertRomanValuesToDecimal(int[] roman)
-        {
-            int counter = 0;
-
-            for (int romanIndex = 0; romanIndex < roman.Length; romanIndex++)
-            {
-                int currentRoman = roman[romanIndex];
-
-                if (romanIndex < roman.Length-1)
-                {
-                    int nextRoman = roman[romanIndex+1];
-
-                    if(currentRoman >= nextRoman)
-                    {
-                        counter += currentRoman;
-                    }
-                    else
-                    {
-                        counter += nextRoman - currentRoman;
-                        romanIndex++;
-                    }
-                }
-                else
-                {
-                    counter += currentRoman;
-                    romanIndex++;
-                }
-            }
-
-            return counter;
-        }
-
-
     }
 }
