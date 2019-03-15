@@ -1,0 +1,6 @@
+public class Frame {
+       
+       private int points;
+       private int roll1;
+       private int roll2;
+}
