@@ -1,0 +1,139 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+		<link rel="stylesheet" type="text/css" href="css/js_uebungen.css">
+		<title>Javascript- und JQuery- Übungen</title>
+		<script type="text/javascript" src="scripts/jquery-2.0.3.js"> </script> 
+  </head>
+  <body class = "bodystyle">
+	<header>
+		<h2 class = "subtitel">5.Übung: DOM Elemente</h2>
+		<a href = "index.html">Zurück zur Hauptseite</a>   
+	</header>
+	<main>
+		<section>	
+			<h3>1. Aufgabe: Ändern Sie den Text des Buttons mit JQuery auf "Stressed" und stellen Sie die die Hintergrundfarbe auf "yellow" ein.
+			Wenn der Button gedrückt wird, soll der Text des Buttons rückwärts geschrieben werden. Verwenden Sie dafür eine Schleife und die Substring Methode."</h3>
+			<p class = "antwort">...</p>
+			<div class = "javascriptcode">
+				&lt;script&gt;<br/>
+				&nbsp;&nbsp; var tmpText = "";
+			
+				$("#btn1").attr('value', 'Stressed');
+				$("#btn1").css('background-color', 'yellow');
+				$( "#btn1" ).click(function() {
+					var currentText = $(this).attr("value");
+					
+					for(var i = currentText.length; i > -1; i--) {
+						tmpText = tmpText + currentText.charAt(i);
+					}
+					
+					$(this).attr("value", tmpText);
+					tmpText = "";
+					
+					
+				});<br/>
+				&lt;/script&gt;
+			</div>
+			<br/>
+			<input id="btn1" type="button" style="Font-size:30px;"/>
+			<script>
+			
+				var tmpText = "";
+			
+				$("#btn1").attr('value', 'Stressed');
+				$("#btn1").css('background-color', 'yellow');
+				$( "#btn1" ).click(function() {
+					var currentText = $(this).attr("value");
+					
+					for(var i = currentText.length; i > -1; i--) {
+						tmpText = tmpText + currentText.charAt(i);
+					}
+					
+					$(this).attr("value", tmpText);
+					tmpText = "";
+					
+					
+				});
+				
+			</script>
+			<br/><br/>
+		</section>
+		<section>	
+			<h3>2. Aufgabe: Manchmal ist es nötig das Eltern- oder Kind Element anzusteuern. Verändern Sie vom "span"-Element  aus, die Border-Color aller "li" Elemente auf rot mit JQuery. </h3>
+			<p class = "antwort">...</p>
+			<div class = "javascriptcode">
+				&lt;script&gt;<br/>
+				&nbsp;&nbsp; $('li:eq(0)').css("border-color","red");
+				$('li:eq(1)').css("border-color","red");
+				$('li:eq(2)').css("border-color","red");
+				$('li:eq(3)').css("border-color","red");<br/>
+				&lt;/script&gt;
+			</div>
+			<div class="ancestors">
+			<ul > ul (grandparent)  
+				<li>li (parent)<span>Milch</span></li>
+				<li>li (parent)<span>Brot</span></li>
+				<li>li (parent)<span>Paprika</span></li>
+				<li>li (parent)<span>Tomate</span></li>
+			</ul>
+			</div>
+			<br/>
+			
+			<script> 	
+				$('li:eq(0)').css("border-color","red");
+				$('li:eq(1)').css("border-color","red");
+				$('li:eq(2)').css("border-color","red");
+				$('li:eq(3)').css("border-color","red");
+			</script>
+			<br/><br/>
+		</section>
+		<section>	
+			<h3>3. Aufgabe: Lassen Sie den folgenden Button verschwinden, sobald auf diesen geklickt wurde mit JQuery. </h3>
+			<p class = "antwort">...</p>
+			<div class = "javascriptcode">
+				&lt;script&gt;<br/>
+				&nbsp;&nbsp; $( "#btn2" ).click(function() {
+					$("#btn2").remove();
+					});<br/>
+				&lt;/script&gt;
+			</div>
+			<br/>
+			<input id="btn2" type="button" style="Font-size:30px;" value="magic"/>
+			<script>
+				$( "#btn2" ).click(function() {
+					$("#btn2").remove();
+					});
+			</script>
+			<br/><br/>
+		</section>
+		<section>		
+			<h3>4. Aufgabe: Löschen Sie alle Textabsätze (P-aragraphen) im folgenden div Element, wenn der Button gedrückt wurde. </h3>
+			<p class = "antwort">...</p>
+			<div class = "javascriptcode">
+				&lt;script&gt;<br/>
+				&nbsp;&nbsp; ...<br/>
+				&lt;/script&gt;
+			</div>
+			<br/>
+			<div class="dynamicJS">
+				<p>Today is a</p>
+				<p>perfect day for</p>
+				<p>a perfect day.</p>
+			</div> 
+			<br/>
+			<input id="btn3" type="button" style="Font-size:30px;" value="nonsense"/>
+			<script>
+			$( "#btn3" ).click(function() {
+				$(".dynamicJS>p").remove() 
+			});
+		
+			</script>
+			<br/><br/>
+		</section>
+	</main>
+	<footer>
+		<label><img class="logo" src="grafik/Logo.jpg"/></label>
+	</footer>
+  </body>
+</html>

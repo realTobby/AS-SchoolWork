@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+  <style>
+.headerFooterStyle{
+	text-align:center;
+	color: #333;
+	margin-left:349px;
+	margin-right:349px;
+	height:75px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	vertical-align:middle;
+	background-color:#D1E0E1;
+}
+
+.labelStyle{
+	color: #333;
+	margin-left:349px;
+	font-size:22px;
+	line-height:1.5;
+}
+
+.controlStyle{
+	color: #333;
+	margin-left:0px;	
+	font-size:22px;
+	line-height:0.5;
+}
+
+.tableHeaderStyle{
+	color:white;
+	margin-left:349px;
+	margin-right:349px;	
+	font-size:22px;
+	line-height:1.5;
+	background-color: #53777A;
+}
+.tableCellStyle{
+	color: #333;
+	margin-left:349px;
+	margin-right:349px;	
+	font-size:22px;
+	line-height:1.5;
+	border-width: thin;
+	border-style:solid;
+}
+
+.tableStyle{
+	color: #333;
+	margin-left:349px;
+	margin-right:349px;	
+	font-size:22px;
+	line-height:1.5;
+	border-width: thin;
+	border-style:solid;
+}
+
+</style>
+<head>
+  <meta charset="UTF-8">
+  <title>Meine TODO-Liste</title>
+  <script type="text/javascript" src="scripts/jquery-2.0.3.js"> </script> 
+  <script type="text/javascript" src="scripts/dataStuff.js"> </script> 
+</head>
+<body onLoad="updateTable()">
+
+<h1 class="headerFooterStyle">Meine TODO-Liste</h1>
+
+<div>
+<label class="labelStyle">Aufgabe</label>
+<br/>
+<input id="inputField" type="text" class="labelStyle" size="47" name="task"></input>
+</div>
+
+<div>
+<label class="labelStyle">erledigt bis</label>
+<br/>
+<input id="datePicker" type="date" class="labelStyle" name="requiredBv"></input>
+</div>
+<div>
+<label class="labelStyle">Kategorie</label>
+<br/>
+<select id="catePicker" class="labelStyle" name="category">
+    <option value="privat">Privat</option>
+    <option value="arbeit">Arbeit</option>
+	<option value="schule">Schule</option>
+</select>
+</div>
+<div>
+	<label class="controlStyle"></label>
+	<br/>
+    <button id="buttonSave" type="button" onClick="buttonSave()" class="tableStyle">Aufgabe speichern</button>
+	<script>
+		saveData();
+	</script>
+</div>
+	<label class="controlStyle"></label>
+	<br/>
+<table id="table" class="tableStyle">
+
+<tr>
+	<td class="tableHeaderStyle">Aufgabe</th>
+	<td class="tableHeaderStyle">bis</th>
+	<td class="tableHeaderStyle">Kategorie</th>	
+</tr>
+<tr>
+	<td class="tableCellStyle">Bücher zurückbringen</th>
+	<td class="tableCellStyle">2016-03-14</th>
+	<td class="tableCellStyle">Privat</th>	
+</tr>
+<tr>
+	<td class="tableCellStyle">Projekt MS3</th>
+	<td class="tableCellStyle">2016-03-12</th>
+	<td class="tableCellStyle">Arbeit</th>	
+</tr>
+<tr>
+	<td class="tableCellStyle">Freunde treffen zum Spielabend</th>
+	<td class="tableCellStyle">2016-03-23</th>
+	<td class="tableCellStyle">Privat</th>	
+</tr>
+</table>
+<br></br>
+<a class="headerFooterStyle" href="http://www.oszimt.de/"><img width="150px" height="50" src="http://www.oberstufenzentrum.de/sites/default/files/image/schul-logo/Logo_kurz_0.jpg?1426454050" alt="Bild nicht gefunden" /></a>
+
+
+
+
+
+
+
+</body>
+</html>

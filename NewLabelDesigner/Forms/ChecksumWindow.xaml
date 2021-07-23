@@ -1,0 +1,21 @@
+﻿<controls:MetroWindow x:Class="LabelDesigner.Forms.ChecksumWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LabelDesigner.Forms"
+        xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        mc:Ignorable="d"
+        Title="ChecksumWindow" Height="200" Width="300">
+    <Grid>
+        <StackPanel>
+            <Label Content="EAN Input:" HorizontalAlignment="Center"/>
+            <TextBox Name="txtBox_eanInput" Margin="5,5,5,5"></TextBox>
+
+            <Button Name="btn_Generate" Content="Erzeuge EAN + Prüfziffer" Margin="10,10,10,10" Click="btn_Generate_Click"/>
+
+            <Label Content="EAN13 mit Prüfziffer:" HorizontalAlignment="Center"/>
+            <TextBox Name="txtBox_eanOutput" Margin="5,5,5,5"/>
+        </StackPanel>
+    </Grid>
+</controls:MetroWindow>

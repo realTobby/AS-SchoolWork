@@ -1,0 +1,35 @@
+C:\Users\Administrator\source\repos\BankingSimulator\BankingSimulator\bin\Debug\BankingSimulator.exe.config
+C:\Users\Administrator\source\repos\BankingSimulator\BankingSimulator\bin\Debug\BankingSimulator.exe
+C:\Users\Administrator\source\repos\BankingSimulator\BankingSimulator\bin\Debug\BankingSimulator.pdb
+C:\Users\Administrator\source\repos\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.Properties.Resources.resources
+C:\Users\Administrator\source\repos\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.csproj.GenerateResource.cache
+C:\Users\Administrator\source\repos\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.exe
+C:\Users\Administrator\source\repos\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.pdb
+C:\Users\Administrator\source\repos\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.LoginForm.resources
+C:\Users\Administrator\source\repos\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.MainForm.resources
+C:\Users\Administrator\source\repos\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.RegisterForm.resources
+C:\Users\Administrator\source\repos\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.BankingForm.resources
+C:\Users\Administrator\source\repos\BankingSimulator\BankingSimulator\bin\Debug\Databases\Banking.mdf
+C:\Users\Administrator\source\repos\BankingSimulator\BankingSimulator\bin\Debug\Databases\Banking_log.ldf
+C:\Users\Administrator\source\repos\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.AddBankForm.resources
+C:\Users\Administrator\source\repos\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.DepositForm.resources
+U:\Tobias K Berufsschule\BankingSimulator\BankingSimulator\bin\Debug\Databases\Banking.mdf
+U:\Tobias K Berufsschule\BankingSimulator\BankingSimulator\bin\Debug\Databases\Banking_log.ldf
+U:\Tobias K Berufsschule\BankingSimulator\BankingSimulator\bin\Debug\BankingSimulator.exe.config
+U:\Tobias K Berufsschule\BankingSimulator\BankingSimulator\bin\Debug\BankingSimulator.exe
+U:\Tobias K Berufsschule\BankingSimulator\BankingSimulator\bin\Debug\BankingSimulator.pdb
+U:\Tobias K Berufsschule\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.csprojResolveAssemblyReference.cache
+U:\Tobias K Berufsschule\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.AddBankForm.resources
+U:\Tobias K Berufsschule\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.BankingForm.resources
+U:\Tobias K Berufsschule\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.DepositForm.resources
+U:\Tobias K Berufsschule\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.LoginForm.resources
+U:\Tobias K Berufsschule\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.MainForm.resources
+U:\Tobias K Berufsschule\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.Properties.Resources.resources
+U:\Tobias K Berufsschule\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.RegisterForm.resources
+U:\Tobias K Berufsschule\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.csproj.GenerateResource.Cache
+U:\Tobias K Berufsschule\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.exe
+U:\Tobias K Berufsschule\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.pdb
+U:\Tobias K Berufsschule\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.WithdrawForm.resources
+U:\Tobias K Berufsschule\BankingSimulator\BankingSimulator\obj\Debug\BankingSimulator.SendMoneyForm.resources

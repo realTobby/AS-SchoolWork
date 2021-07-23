@@ -1,0 +1,86 @@
+﻿<Window x:Class="oszimt.drive4ever.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:oszimt.drive4ever"
+        mc:Ignorable="d"
+        Title="Dive Quiz" Height="350" Width="525">
+    <Grid x:Name="gridMaster">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <!-- Frage: Zufallsfragen -->
+            <RowDefinition Height="64"/>
+            <!-- Frage -->
+            <RowDefinition Height="*"/>
+            <!-- Antwort möglichkeiten-->
+            <RowDefinition Height="32"/>
+            <!-- Button nächste Frage -->
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="assets/background.jpg"/>
+        </Grid.Background>
+
+        <Grid x:Name="gridTopRow" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label x:Name="labelFrage" Content="{Binding FrageLabel}" Grid.Column="0" HorizontalAlignment="Left" Margin="5,5,0,0"/>
+            <CheckBox x:Name="checkBoxZufallsfrage" Content="Zufallsfragen" Grid.Column="1" HorizontalAlignment="Right" Margin="0,10,10,0" IsChecked="{Binding CheckZufallsFrage}"/>
+
+        </Grid>
+
+        <Grid x:Name="gridFrage" Grid.Row="1">
+            <Border BorderBrush="Black" BorderThickness="0.7" Margin="15,5,15,5">
+                <TextBlock Text="{Binding Frage.Frage}" TextWrapping="Wrap" Background="White"/>
+            </Border>
+        
+        </Grid>
+
+        <Grid x:Name="gridAntwortenMaster" Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="55"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid x:Name="gridRadios" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <RadioButton x:Name="radioFrageEins" Content="a" Margin="10,0,0,0" Grid.Row="0" IsChecked="{Binding RadioCheckedA}"/>
+                <RadioButton x:Name="radioFrageZwei" Content="b" Margin="10,0,0,0" Grid.Row="1" IsChecked="{Binding RadioCheckedB}"/>
+                <RadioButton x:Name="radioFrageDrei" Content="c" Margin="10,0,0,0" Grid.Row="2" IsChecked="{Binding RadioCheckedC}"/>
+                   <RadioButton x:Name="radioFrageVier" Content="d" Margin="10,0,0,0" Grid.Row="3" IsChecked="{Binding RadioCheckedD}"/>
+            </Grid>
+
+            <Grid x:Name="gridAntworten" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Border BorderBrush="Black" BorderThickness="0.7" Grid.Row="0" Margin="0,5,10,5">
+                    <TextBlock x:Name="frageEins" Text="{Binding Frage.AntwortA}"  TextWrapping="Wrap" Background="{Binding BackColorForA}" MouseDown="frageEins_MouseDown"/>
+                </Border>
+                <Border BorderBrush="Black" BorderThickness="0.7" Grid.Row="1" Margin="0,5,10,5">
+                    <TextBlock x:Name="frageZwei" Text="{Binding Frage.AntwortB}"  TextWrapping="Wrap" Background="{Binding BackColorForB}" MouseDown="frageZwei_MouseDown"/>
+                </Border>
+                <Border BorderBrush="Black" BorderThickness="0.7" Grid.Row="2" Margin="0,5,10,5">
+                    <TextBlock x:Name="frageDrei" Text="{Binding Frage.AntwortC}"  TextWrapping="Wrap" Background="{Binding BackColorForC}" MouseDown="frageDrei_MouseDown"/>
+                </Border>
+                <Border BorderBrush="Black" BorderThickness="0.7" Grid.Row="3" Margin="0,5,10,5">
+                    <TextBlock x:Name="frageVier" Text="{Binding Frage.AntwortD}"  TextWrapping="Wrap" Background="{Binding BackColorForD}" MouseDown="frageVier_MouseDown"/>
+                </Border>
+            </Grid>
+        </Grid>
+        <Button x:Name="buttonNext" Grid.Row="4" Content="Nächste Frage" Margin="10,5,10,5" Click="buttonNext_Click"/>
+        </Grid>
+</Window>

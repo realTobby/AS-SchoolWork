@@ -1,0 +1,97 @@
+.bodystyle
+{
+  font-family:Verdana;
+}
+footer {
+  background: #FF0040;
+  height: 50px;
+  line-height: 80px;
+  margin-top: 50px;
+  text-align: center;
+}
+.logo {
+    margin-top: 0px;
+}
+a:link
+{
+  color:blue;
+}
+a:visited
+{
+  color:blue;
+}
+a:active
+{
+  color:blue;
+}
+.titel
+{
+  color:#FF0040;
+}
+.subtitel
+{
+  color:#FF0040;
+}
+.javascriptcode
+{
+  border-style:dotted;
+  border-color:blue;
+  border-width:1px;
+  background-color:lightblue;
+  padding:3px;
+  font-family:Courier;
+  font-weight:normal;
+}
+
+.antwort
+{
+  border-style:dotted;
+  border-color:blue;
+  border-width:1px;
+  background-color:lightgreen;
+  padding:5px;
+}
+
+.dynamicJS
+{
+  border-style:dotted;
+  border-color:blue;
+  border-width:1px;
+  background-color:yellow;
+  padding:5px;
+  font-size:20px;
+}
+
+#starWarsTable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 25%;
+}
+#starWarsTable thead {
+    background-color:yellow;
+	  font-weight:bold;
+}
+
+#starWarsTable td, #starWarsTable th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#starWarsTable tr:nth-child(even){background-color: #f2f2f2}
+
+#starWarsTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.ancestors * { 
+    display: block;
+    border: 2px solid grey;
+    color: grey;
+    padding: 5px;
+    margin: 15px;
+	background-color: yellow;
+}

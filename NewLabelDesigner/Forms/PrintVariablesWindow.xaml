@@ -1,0 +1,26 @@
+﻿<controls:MetroWindow x:Class="LabelDesigner.Forms.PrintVariablesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LabelDesigner.Forms"
+        xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+        mc:Ignorable="d"
+        Title="PrintVariablesWindow" Height="450" Width="800" Icon="/Resources/sysProLogo.png" IconScalingMode="ScaleDownLargerFrame" IconOverlayBehavior="Flyouts"
+                      ShowIconOnTitleBar="False" FontWeight="Bold"
+        WindowStartupLocation="CenterScreen" WindowTitleBrush="#FF7BAA4E">
+    <Grid>
+
+        <Grid.Background>
+            <ImageBrush ImageSource="/Resources/sysproBackground.png" Stretch="Fill"/>
+        </Grid.Background>
+
+        <telerik:RadGridView Margin="10,10,10,10"  x:Name="RadGridView" ItemsSource="{Binding PrintVariableList}"  ShowGroupPanel="False" NewRowPosition="Bottom" GroupRenderMode="Flat"  RowIndicatorVisibility="Collapsed" ValidatesOnDataErrors="InEditMode"  AutoGenerateColumns="False" CanUserDeleteRows="true" CanUserInsertRows="true" SelectionMode="Single" ToolTip="Platzhalter-Variablen die dem Drucker übergeben werden." Background="Transparent"  >
+            <telerik:RadGridView.Columns>
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding VarableName}"  />
+                <telerik:GridViewDataColumn DataMemberBinding="{Binding VarableValue}"  />
+            </telerik:RadGridView.Columns>
+        </telerik:RadGridView>
+    </Grid>
+</controls:MetroWindow>

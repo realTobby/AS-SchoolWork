@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DiveDataModelStoreContainer" CdmEntityContainer="DiveDataConnector">
+    <EntitySetMapping Name="T_Fragen">
+      <EntityTypeMapping TypeName="DiveDataModel.T_Fragen">
+        <MappingFragment StoreEntitySet="T_Fragen">
+          <ScalarProperty Name="P_Fragen_ID" ColumnName="P_Fragen_ID" />
+          <ScalarProperty Name="Frage" ColumnName="Frage" />
+          <ScalarProperty Name="AntwortA" ColumnName="AntwortA" />
+          <ScalarProperty Name="AntwortB" ColumnName="AntwortB" />
+          <ScalarProperty Name="AntwortC" ColumnName="AntwortC" />
+          <ScalarProperty Name="AntwortD" ColumnName="AntwortD" />
+          <ScalarProperty Name="Loesung" ColumnName="Loesung" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,13 @@
+D:\Data\Documents\Blogs\Programming Tutorials\WPF\DragShapes\DragShapes\bin\Debug\DragShapes.exe
+D:\Data\Documents\Blogs\Programming Tutorials\WPF\DragShapes\DragShapes\bin\Debug\DragShapes.pdb
+D:\Data\Documents\Blogs\Programming Tutorials\WPF\DragShapes\DragShapes\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Data\Documents\Blogs\Programming Tutorials\WPF\DragShapes\DragShapes\obj\x86\Debug\MainWindow.baml
+D:\Data\Documents\Blogs\Programming Tutorials\WPF\DragShapes\DragShapes\obj\x86\Debug\MainWindow.g.cs
+D:\Data\Documents\Blogs\Programming Tutorials\WPF\DragShapes\DragShapes\obj\x86\Debug\App.g.cs
+D:\Data\Documents\Blogs\Programming Tutorials\WPF\DragShapes\DragShapes\obj\x86\Debug\DragShapes_MarkupCompile.cache
+D:\Data\Documents\Blogs\Programming Tutorials\WPF\DragShapes\DragShapes\obj\x86\Debug\DragShapes.g.resources
+D:\Data\Documents\Blogs\Programming Tutorials\WPF\DragShapes\DragShapes\obj\x86\Debug\DragShapes.Properties.Resources.resources
+D:\Data\Documents\Blogs\Programming Tutorials\WPF\DragShapes\DragShapes\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Data\Documents\Blogs\Programming Tutorials\WPF\DragShapes\DragShapes\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Data\Documents\Blogs\Programming Tutorials\WPF\DragShapes\DragShapes\obj\x86\Debug\DragShapes.exe
+D:\Data\Documents\Blogs\Programming Tutorials\WPF\DragShapes\DragShapes\obj\x86\Debug\DragShapes.pdb

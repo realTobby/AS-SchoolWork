@@ -1,0 +1,25 @@
+﻿<controls:MetroWindow x:Class="LabelDesigner.Forms.EPCWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LabelDesigner.Forms"
+        xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        mc:Ignorable="d"
+        Title="EPCWindow" Height="270" Width="300">
+    <Grid>
+        <StackPanel>
+            <Label Content="Element String:" HorizontalAlignment="Center"/>
+            <TextBox Name="txtBox_elementString" Margin="5,5,5,5"/>
+
+            <Label Content="Seriennummer:" HorizontalAlignment="Center"/>
+            <TextBox Name="txtBox_serialNumber" Margin="5,5,5,5"/>
+
+            <Button Name="btn_Generate" Content="Erzeuge EPC" Margin="10,10,10,10" Click="btn_Generate_Click"/>
+
+            <Label Content="EPC:" HorizontalAlignment="Center"/>
+            <TextBox Name="txtBox_epc" Margin="5,5,5,5"/>
+
+        </StackPanel>
+    </Grid>
+</controls:MetroWindow>
